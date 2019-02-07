@@ -2,7 +2,7 @@
 //  UIView.swift
 //  HKit
 //
-//  Created by Himanshu Parashar on 07/05/92.
+//  Created by Himanshu Parashar on 07/07/07.
 //  Copyright © 2019 HP. All rights reserved.
 //
 
@@ -24,13 +24,31 @@ public extension UIView {
         let cntr:CGPoint = self.center
         self.layer.cornerRadius = min(self.frame.size.height, self.frame.size.width) / 2.0
         self.center = cntr
-       // self.layer.masksToBounds = true
+        // self.layer.masksToBounds = true
         self.clipsToBounds = true
         self.contentMode = UIView.ContentMode.scaleAspectFill
     }
-}
-
-public extension UIView {
+    
+    public func startRotating(duration: Double = 1) {
+        let kAnimationKey = "rotation"
+        
+        if self.layer.animation(forKey: kAnimationKey) == nil {
+            let animate = CABasicAnimation(keyPath: "transform.rotation")
+            animate.duration = duration
+            animate.repeatCount = Float.infinity
+            animate.fromValue = 0.0
+            animate.toValue = CGFloat.pi * 2.0
+            self.layer.add(animate, forKey: kAnimationKey)
+        }
+    }
+    
+    public func stopRotating() {
+        let kAnimationKey = "rotation"
+        
+        if self.layer.animation(forKey: kAnimationKey) != nil {
+            self.layer.removeAnimation(forKey: kAnimationKey)
+        }
+    }
     
     public func searchVisualEffectsSubview() -> UIVisualEffectView? {
         if let visualEffectView = self as? UIVisualEffectView {

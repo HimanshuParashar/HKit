@@ -2,12 +2,33 @@
 //  UIAlertController+Extensions.swift
 //  HKit
 //
-//  Created by Himanshu Parashar on 07/05/92.
+//  Created by Himanshu Parashar on 07/07/07.
 //  Copyright © 2019 HP. All rights reserved.
 //
 
 import UIKit
 import AudioToolbox
+
+// MARK: - Initializers
+public extension UIAlertController {
+    
+    /// Creates and returns a view controller for displaying an alert to the user..
+    ///
+    /// - Parameters:
+    ///   - title: The title of the alert. Use this string to get the user’s attention and communicate the reason for the alert..
+    ///   - message: Descriptive text that provides additional details about the reason for the alert. (default is nil).
+    ///   - preferredStyle: The style to use when presenting the alert controller. Use this parameter to configure the alert controller as an action sheet or as a modal alert.
+    ///   - defaultActionButtonTitle: default action button title (default is "OK")
+    ///   - tintColor: alert controller's tint color (default is nil)
+    
+    public convenience init(title: String? = nil, message: String? = nil, preferredStyle: UIAlertController.Style, tintColor: UIColor? = nil) {
+        self.init(title: title, message: message, preferredStyle: preferredStyle)
+        
+        if let color = tintColor {
+            self.view.tintColor = color
+        }
+    }
+}
 
 // MARK: - Methods
 public extension UIAlertController {

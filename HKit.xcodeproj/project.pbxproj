@@ -28,6 +28,12 @@
 		4F02F31D21FF2BB4005D74E3 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02F30D21FF2BB4005D74E3 /* ReusableIdentifier.swift */; };
 		4F02F31E21FF2BB4005D74E3 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02F30E21FF2BB4005D74E3 /* Date.swift */; };
 		4F02F31F21FF2BB4005D74E3 /* CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02F30F21FF2BB4005D74E3 /* CAGradientLayer.swift */; };
+		4F0F133E220C097500565898 /* MetadataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F133D220C097500565898 /* MetadataType.swift */; };
+		4F0F1340220C0A4700565898 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F133F220C0A4700565898 /* UITableViewCell.swift */; };
+		4F0F1342220C0A6A00565898 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F1341220C0A6A00565898 /* Font.swift */; };
+		4F0F1344220C0A7900565898 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F1343220C0A7900565898 /* Int.swift */; };
+		4F0F1346220C0A8400565898 /* UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F1345220C0A8400565898 /* UIRefreshControl.swift */; };
+		4F0F1348220C0AB300565898 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F1347220C0AB300565898 /* Device.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,12 @@
 		4F02F30D21FF2BB4005D74E3 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
 		4F02F30E21FF2BB4005D74E3 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		4F02F30F21FF2BB4005D74E3 /* CAGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayer.swift; sourceTree = "<group>"; };
+		4F0F133D220C097500565898 /* MetadataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetadataType.swift; sourceTree = "<group>"; };
+		4F0F133F220C0A4700565898 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		4F0F1341220C0A6A00565898 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		4F0F1343220C0A7900565898 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		4F0F1345220C0A8400565898 /* UIRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRefreshControl.swift; sourceTree = "<group>"; };
+		4F0F1347220C0AB300565898 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +112,10 @@
 		4F02F2FF21FF2B9F005D74E3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4F02F32221FF2CB6005D74E3 /* Classes */,
+				4F0F133C220C096600565898 /* Enums */,
 				4F02F32021FF2BF2005D74E3 /* Extensions */,
 				4F02F32121FF2C77005D74E3 /* Protocols */,
-				4F02F32221FF2CB6005D74E3 /* Classes */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -110,6 +123,8 @@
 		4F02F32021FF2BF2005D74E3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4F0F1345220C0A8400565898 /* UIRefreshControl.swift */,
+				4F0F1343220C0A7900565898 /* Int.swift */,
 				4F02F30F21FF2BB4005D74E3 /* CAGradientLayer.swift */,
 				4F02F30E21FF2BB4005D74E3 /* Date.swift */,
 				4F02F30021FF2BB3005D74E3 /* Dictionary.swift */,
@@ -118,6 +133,7 @@
 				4F02F30921FF2BB3005D74E3 /* UIAlertController.swift */,
 				4F02F30121FF2BB3005D74E3 /* UIApplication.swift */,
 				4F02F30521FF2BB3005D74E3 /* UITableView.swift */,
+				4F0F133F220C0A4700565898 /* UITableViewCell.swift */,
 				4F02F30821FF2BB3005D74E3 /* UIView.swift */,
 				4F02F30C21FF2BB3005D74E3 /* UserDefaults.swift */,
 				4F02F30421FF2BB3005D74E3 /* UINavigationBar.swift */,
@@ -137,11 +153,21 @@
 		4F02F32221FF2CB6005D74E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4F0F1347220C0AB300565898 /* Device.swift */,
+				4F0F1341220C0A6A00565898 /* Font.swift */,
 				4F02F30221FF2BB3005D74E3 /* Logger.swift */,
 				4F02F30B21FF2BB3005D74E3 /* ValidationRules.swift */,
 				4F02F30621FF2BB3005D74E3 /* DatePickerViewController.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		4F0F133C220C096600565898 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4F0F133D220C097500565898 /* MetadataType.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,16 +243,22 @@
 			files = (
 				4F02F31721FF2BB4005D74E3 /* UITableViewButtonDelegate.swift in Sources */,
 				4F02F31A21FF2BB4005D74E3 /* String.swift in Sources */,
+				4F0F1342220C0A6A00565898 /* Font.swift in Sources */,
 				4F02F31221FF2BB4005D74E3 /* Logger.swift in Sources */,
 				4F02F31F21FF2BB4005D74E3 /* CAGradientLayer.swift in Sources */,
 				4F02F31821FF2BB4005D74E3 /* UIView.swift in Sources */,
+				4F0F1340220C0A4700565898 /* UITableViewCell.swift in Sources */,
+				4F0F1344220C0A7900565898 /* Int.swift in Sources */,
+				4F0F1346220C0A8400565898 /* UIRefreshControl.swift in Sources */,
 				4F02F2F021FF2B34005D74E3 /* ViewController.swift in Sources */,
 				4F02F31621FF2BB4005D74E3 /* DatePickerViewController.swift in Sources */,
 				4F02F31E21FF2BB4005D74E3 /* Date.swift in Sources */,
 				4F02F2EE21FF2B34005D74E3 /* AppDelegate.swift in Sources */,
 				4F02F31321FF2BB4005D74E3 /* Array.swift in Sources */,
 				4F02F31421FF2BB4005D74E3 /* UINavigationBar.swift in Sources */,
+				4F0F1348220C0AB300565898 /* Device.swift in Sources */,
 				4F02F31D21FF2BB4005D74E3 /* ReusableIdentifier.swift in Sources */,
+				4F0F133E220C097500565898 /* MetadataType.swift in Sources */,
 				4F02F31521FF2BB4005D74E3 /* UITableView.swift in Sources */,
 				4F02F31121FF2BB4005D74E3 /* UIApplication.swift in Sources */,
 				4F02F31C21FF2BB4005D74E3 /* UserDefaults.swift in Sources */,
@@ -309,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -364,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -380,6 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,6 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

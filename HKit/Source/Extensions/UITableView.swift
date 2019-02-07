@@ -2,7 +2,7 @@
 //  UITableView.swift
 //  HKit
 //
-//  Created by Himanshu Parashar on 07/05/92.
+//  Created by Himanshu Parashar on 07/07/07.
 //  Copyright © 2019 HP. All rights reserved.
 //
 
@@ -38,17 +38,3 @@ public extension UITableView {
     }
 }
 
-public extension UITableViewCell {
-
-    func showSeparator() {
-        DispatchQueue.main.async {
-            self.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        }
-    }
-    
-    func hideSeparator() {
-        DispatchQueue.main.async {
-            self.separatorInset = UIEdgeInsets(top: 0, left: self.bounds.size.width, bottom: 0, right: 0)
-        }
-    }
-}

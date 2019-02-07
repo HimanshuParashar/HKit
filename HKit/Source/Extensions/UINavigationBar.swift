@@ -2,7 +2,7 @@
 //  UINavigationBar.swift
 //  HKit
 //
-//  Created by Himanshu Parashar on 07/05/92.
+//  Created by Himanshu Parashar on 07/07/07.
 //  Copyright © 2019 HP. All rights reserved.
 //
 
@@ -29,5 +29,13 @@ public extension UINavigationBar {
         let gradientLayer = CAGradientLayer(frame: defaultNavigationBarFrame, colors: colors)
         
         setBackgroundImage(gradientLayer.createGradientImage, for: UIBarMetrics.default)
+    }
+    
+    public func shouldRemoveShadow(_ value: Bool) -> Void {
+        if value {
+            self.setValue(true, forKey: "hidesShadow")
+        } else {
+            self.setValue(false, forKey: "hidesShadow")
+        }
     }
 }

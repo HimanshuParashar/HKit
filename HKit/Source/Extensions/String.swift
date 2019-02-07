@@ -2,7 +2,7 @@
 //  String.swift
 //  HKit
 //
-//  Created by Himanshu Parashar on 07/05/92.
+//  Created by Himanshu Parashar on 07/07/07.
 //  Copyright © 2019 HP. All rights reserved.
 //
 
@@ -14,6 +14,17 @@ public extension String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
+    public var string: NSString {
+        return self as NSString
+    }
+    
+    public var fileExtension: String {
+        return string.pathExtension
+    }
+    
+    public var lastPathComponent: String {
+        return string.lastPathComponent
+    }
     
     public var asURL: URL? {
         
