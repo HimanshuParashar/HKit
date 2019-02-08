@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name            = 'HKit'
-  s.version         = '0.0.2'
+  s.version         = '0.0.3'
   s.summary         = 'A library of useful enums, extensions, protocols, and classes.'
   s.swift_version   = '4.2'
 

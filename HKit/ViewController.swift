@@ -16,10 +16,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         label.text = UIApplication.appDetails
-        
+
         Logger.debugLog(UIApplication.appDetails)
     }
 
 
 }
+
 
