@@ -63,8 +63,7 @@ public extension UIView {
         return nil
     }
     
-    /// This is the function to get subViews of a view of a particular type
-    /// https://stackoverflow.com/a/45297466/5321670
+    /// This is the function to get subViews of a view of a particular type. [Know more](https://stackoverflow.com/a/45297466/5321670)
     public func subViews<T : UIView>(type : T.Type) -> [T]{
         var all = [T]()
         for view in self.subviews {
@@ -76,8 +75,7 @@ public extension UIView {
     }
     
     
-    /// This is a function to get subViews of a particular type from view recursively. It would look recursively in all subviews and return back the subviews of the type T
-    /// https://stackoverflow.com/a/45297466/5321670
+    /// This is a function to get subViews of a particular type from view recursively. It would look recursively in all subviews and return back the subviews of the type T. [Know more](https://stackoverflow.com/a/45297466/5321670)
     public func allSubViewsOf<T : UIView>(type : T.Type) -> [T]{
         var all = [T]()
         func getSubview(view: UIView) {

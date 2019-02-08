@@ -32,11 +32,12 @@ public class Logger {
      ```
      
      - Parameters:
-     - items: Zero or more items to print.
+        - items: Zero or more items to print.
      
      - Returns: *Items*.
-     - Note: This function works when DEBUG mode is on. <https://stackoverflow.com/questions/24003291/ifdef-replacement-in-the-swift-language>
-     
+     - Note: This function works when DEBUG mode is active. [Know more](https://stackoverflow.com/questions/24003291/ifdef-replacement-in-the-swift-language)
+     - seealso:  `Logger.debugLog("Log any items")`
+
      */
     
     public static func log<T>(_ items: T) {
@@ -62,14 +63,14 @@ public class Logger {
      ```
      
      - Parameters:
-     - items: Zero or more items to print.
-     - file: file name to print.
-     - line: line name to print.
-     - function: function name to print.
+        - items: Zero or more items to print.
+        - file: file name to print.
+        - line: line name to print.
+        - function: function name to print.
      
      - Returns: *Items* with current time, file name, line name and function name.
-     - Note: This function works when DEBUG mode is on. <https://stackoverflow.com/questions/24003291/ifdef-replacement-in-the-swift-language>
-     - SeeAlso:  `Logger.log("Log any items")`
+     - Note: This function works when DEBUG mode is active. [Know more](https://stackoverflow.com/questions/24003291/ifdef-replacement-in-the-swift-language)
+     - seealso:  `Logger.log("Log any items")`
      
      */
     

@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Id6-7f-F64">
-                                <rect key="frame" x="152" y="323.5" width="71" height="20.5"/>
+                                <rect key="frame" x="8" y="323.5" width="359" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,8 +27,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Id6-7f-F64" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Md-As-MDF"/>
-                            <constraint firstItem="Id6-7f-F64" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vz6-aX-Di9"/>
+                            <constraint firstItem="Id6-7f-F64" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0BY-ec-bye"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Id6-7f-F64" secondAttribute="trailing" constant="8" id="ZcD-Gh-AfM"/>
+                            <constraint firstItem="Id6-7f-F64" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="ZrX-RL-LNY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="73" y="-20"/>
         </scene>
     </scenes>
 </document>

@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.source          = { :git => 'https://github.com/HimanshuParashar/HKit.git', :tag => s.version.to_s }
 
 
-  s.source_files  = "HPKit/Source/**/*"
+  s.source_files  = 'HKit/Source/**/*'
 
 end
